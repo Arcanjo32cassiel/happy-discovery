@@ -81,6 +81,10 @@ fieldset legend {
     position: relative;
 }
 
+.new-upload+.new-upload {
+    margin-top: .8rem;
+}
+
 .new-upload span {
     position: absolute;
     right: 12px;

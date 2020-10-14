@@ -2,9 +2,8 @@
 <html lang="pt_BR">
 
 <head>
-    <meta charset="UTF-8">
+    <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title> Adicionar um orfanato | Happy</title>
 
     <link rel="stylesheet" href="https://unpkg.com/leaflet@1.7.1/dist/leaflet.css" integrity="sha512-xodZBNTC5n17Xt2atTPuE1HxjVMSvLVW9ocqUKLsCC5CXdbqCmblAshOMAS6/keqq/sMZMZ19scR4PsZChSR7A==" crossorigin="" />
@@ -35,11 +34,13 @@
 
 
         <main class="animate-appear width-sadebar ">
-            <form action="" method="post">
+            <form action="">
                 <fieldset>
                     <legend>Dados</legend>
                     <div class="map-container">
                         <div id="mapid"></div>
+                        <input type="hidden" name="lat">
+                        <input type="hidden" name="lng">
                         <footer>
                             <a href="#" id="select-point">Clique no mapa para adicionar a localização</a>
                         </footer>
@@ -62,18 +63,22 @@
                         <div class="images-upload" id="images">
                             <div class="new-upload">
                                 <input type="" name="images" placeholder="Cole o link da foto aqui" required>
-                                <span><img src="./public/images/delete.svg" alt="Remover foto"></span>
+                                <span onclick="deleteField(event)"><img src="./public/images/delete.svg" alt="Remover foto"></span>
                             </div>
                         </div>
-                        <button class=" more" type="button"><img src="./public/images/more.svg" alt=""></button>
+                        <button onclick="addPhotoField()" type="button">
+                            <img src="./public/images/more.svg" alt="Adicionar foto" />
+                          </button>
                     </div>
                 </fieldset>
+
                 <fieldset>
                     <legend>Visitação</legend>
 
                     <div class="input-block">
                         <label for="instructions">Sobre   <span>Instruções</span></label>
-                        <textarea name="instructions" id="instructions" required></textarea>
+                        <textarea name="instructions" id="instructions" required>
+                        </textarea>
                     </div>
 
                     <div class="input-block">
@@ -83,19 +88,21 @@
 
                     <div class="input-block">
                         <label for="open_on_weekkends">Atende fim de semana?</label>
-                        <input type="hidden" name="open_on_weekkends" name="open_on_weekkends" value="1" required>
+                        <input type="hidden" name="open_on_weekkends" name="open_on_weekkends" value="1" required/>
 
                         <div class="button-select">
-                            <button type="button" class="active">Sim</button>
-                            <button type="button" class="">Não</button>
+                            <button data-value="1" onclick="toggleSelect(event)" type="button" class="active">Sim</button>
+                            <button data-value="0" onclick="toggleSelect(event)" type="button" class="">Não</button>
                         </div>
 
                         <button type="submit" class="primary-button">Confirmar</button>
+
                     </div>
                 </fieldset>
             </form>
         </main>
     </div>
+
     <script src="./public/scripts/page-create-orphanage.js"></script>
 </body>
 
