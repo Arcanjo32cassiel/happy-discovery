@@ -93,3 +93,23 @@ a.create-orphaneges:hover {
     font: 700 2rem/1 'Nunito', sans-serif;
     z-index: 5;
 }
+
+.back-page-landing {
+    position: absolute;
+    left: 17rem;
+    top: 1rem;
+    width: 4rem;
+    height: 4rem;
+    background: #ffd666;
+    border: none;
+    border-radius: 3rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: background .2s;
+    animation-delay: 250ms;
+}
+
+.back-page-landing:hover {
+    background: #96feff;
+}
