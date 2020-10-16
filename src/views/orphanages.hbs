@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="pt_BR">
+<html lang="pt-br">
 
 <head>
     <meta charset="UTF-8">
@@ -12,12 +12,12 @@
     <!-- Make sure you put this AFTER Leaflet's CSS -->
     <script src="https://unpkg.com/leaflet@1.7.1/dist/leaflet.js" integrity="sha512-XQoYMqMTK8LvdxXYG3nZ448hOEQiglfqkJs1NOQV44cWnUrBc8PkAOcXy20w0vlaXaVUearIOBhiXZ5V3ynxwA==" crossorigin=""></script>
 
-    <link rel="stylesheet" href="./public/css/main.css">
-    <link rel="stylesheet" href="./public/css/animations.css">
-    <link rel="stylesheet" href="./public/css/page-orphaneges.css">
+    <link rel="stylesheet" href="/css/main.css">
+    <link rel="stylesheet" href="/css/animations.css">
+    <link rel="stylesheet" href="/css/page-orphaneges.css">
 
 
-    <link rel="icon" href="./public/images/logo-icon.png">
+    <link rel="icon" href="/images/logo-icon.png">
 
     <link href="https://fonts.googleapis.com/css2?family=Nunito:wght@400;600;700;800&display=swap" rel="stylesheet">
 </head>
@@ -25,28 +25,40 @@
 <body>
     <div id="page-orphaneges">
         <aside class="animate-right">
-            <a href="index.html" class="back-page-landing  animate-up" title="'Voltar para página inicial'">
-                <img src="./public/images/arrow-back.svg" alt="Criar orfanato">
-            </a>
+            <!-- <a href="index" class="back-page-landing  animate-up" title="Voltar para página inicial"> 
+                <img src="/images/arrow-back.svg" alt="Voltar para página inicial">
+            </a>-->
             <header>
-                <img src="./public/images/map-marker.svg" alt="Happy">
+                <img src="/images/map-marker.svg" alt="Happy">
                 <h2>Escolha um orfanato no mapa</h2>
                 <p>Muitas crianças estão espereando sua visita :)</p>
             </header>
             <footer>
                 <strong>Bom Jesus </strong>
                 <p>Piaui</p>
+               
+               
             </footer>
 
         </aside>
-        <div id="mapid" class="animate-appear">
+        <div id="mapid" class="animate-appear"></div>
+<div class="orphanages">
+        {{#each orphanages}}
+            <span hidden 
+                data-id="{{this.id}}"
+                data-name="{{this.name}}"
+                data-lat="{{this.lat}}"
+                data-lng="{{this.lng}}"
+            ></span>
+            {{/each}}
+</div>
 
-        </div>
-        <a href="create-orphanage.html" class="create-orphaneges" title="'Cadastre seu orfanato'">
-            <img src="./public/images/plus.svg" alt="Criar orfanato">
+
+        <a href="/create-orphanage" class="create-orphaneges" title="'Cadastre seu orfanato'">
+            <img src="/images/plus.svg" alt="Criar orfanato">
         </a>
     </div>
-    <script src="./public/scripts/orphanages.js"></script>
+    <script src="/scripts/orphanages.js"></script>
 </body>
 
 </html>
