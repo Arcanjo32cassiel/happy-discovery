@@ -1,13 +1,15 @@
 const options = {
-    dragging: false,
-    touchZoom: false,
-    doubleClickZoom: false,
-    scrollWheelZoom: false,
-    zoomControl: false,
-}
-
-// create map
-const map = L.map('mapid', options).setView([-9.0716449, -44.3520314], 16);
+        dragging: false,
+        touchZoom: false,
+        doubleClickZoom: false,
+        scrollWheelZoom: false,
+        zoomControl: false,
+    }
+    // get values from html
+const lat = document.querySelector('span[data-lat').dataset.lat
+const lng = document.querySelector('span[data-lng').dataset.lng
+    // create map
+const map = L.map('mapid', options).setView([lat, lng], 16);
 
 // create and add tileLayer
 L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png').addTo(map);
@@ -23,7 +25,7 @@ const icon = L.icon({
 
 // create and  marker
 L
-    .marker([-9.0716449, -44.3520314], { icon })
+    .marker([lat, lng], { icon })
     .addTo(map)
 
 

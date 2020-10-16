@@ -78,6 +78,13 @@ function toggleSelect(event) {
     input.value = button.dataset.value
         // verificar se sim ou não 
 
+}
 
-
+function validate(event) {
+    // validate se lat e lng estão preenchidos
+    const needsLatLng = true;
+    if (needsLatLng(event)) {
+        event.prventDefault();
+        alert("Seleciona um ponto no mapa")
+    }
 }
