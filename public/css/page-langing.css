@@ -1,5 +1,5 @@
-#page-langing {
-    background: linear-gradient(329.54deg, #29b6d1 0%, #00c7c7 100%);
+#page-landing {
+    background: linear-gradient(329.54deg, #29b6d1 0%, #019696 100%);
     text-align: center;
     min-height: 100vh;
     display: flex;
@@ -59,6 +59,7 @@ main h1 {
         padding: 3rem 2rem;
         /* s horthand  background: image  repeat  position / size */
         background: url("../images/bg.svg") no-repeat 80% / clamp(30rem, 54vw, 56rem);
+        filter: inherit;
     }
     header {
         display: flex;

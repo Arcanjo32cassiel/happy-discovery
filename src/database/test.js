@@ -30,6 +30,6 @@ Database.then(async db => {
     // const orphanage = await db.get('SELECT * FROM orphanages WHERE id = "1"')
     // console.log(orphanage)
     // deletar dados da TABELA
-    console.log(await db.run("DELETE FROM orphanages "))
+    // console.log(await db.run("DELETE FROM orphanages "))
 
 })

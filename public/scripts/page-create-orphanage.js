@@ -80,11 +80,12 @@ function toggleSelect(event) {
 
 }
 
-function validate(event) {
-    // validate se lat e lng estão preenchidos
-    const needsLatLng = true;
-    if (needsLatLng(event)) {
-        event.prventDefault();
-        alert("Seleciona um ponto no mapa")
-    }
-}
+
+// export const validate = (event) => {
+//     // validate se lat e lng estão preenchidos
+//     // const needsLatLng = true;
+//     if (lat.value === ' ' && lng.value === ' ') {
+//         event.prventDefault();
+//         alert("Seleciona um ponto no mapa")
+//     }
+// }

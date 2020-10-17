@@ -48,9 +48,11 @@ module.exports = {
     async saveOrphanage(req, res) {
         const fields = req.body;
         if (Object.values(fields).includes("")) {
-            return res.send("Todos os campos devem ser preenchidos");
+            // return res.send("Todos os campos devem ser preenchidos");
+            return res.redirect('/error')
         }
         try {
+
             // salvar um orfanato
             const db = await Database
             await saveOrphanage(db, {
@@ -71,5 +73,9 @@ module.exports = {
             return res.send('Erro no banco de dados')
         }
 
-    }
+    },
+    error(req, res) {
+        return res.render('error')
+    },
+
 }

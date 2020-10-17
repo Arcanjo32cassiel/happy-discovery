@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Happy</title>
+    <link rel="stylesheet" href="/css/main.css">
+    {{!-- <link rel="stylesheet" href="/css/animations.css"> --}}
+    {{!-- <link rel="stylesheet" href="/css/page-langing.css"> --}}
+    
+
+    <link rel="icon" href="/images/logo-icon.png">
+    <link href="https://fonts.googleapis.com/css2?family=Nunito:wght@400;600;800&display=swap" rel="stylesheet">
+
+<style>
+    #page-error{
+   background: #222;
+   color:#fff;
+   text-align: center;
+   display: flex;
+   justify-content: center;
+   flex-direction: column;
+   width:100vw;
+   height:100vh;
+    }
+    h1 {
+   font-weight: 700;
+   font-size: 25vh;
+   margin: 0;
+   line-height: 1;
+   animation: light 4s steps(1) infinite;
+}
+a{
+    text-decoration: none;
+    color: white;
+}
+button{
+    background: #030b6d33;
+    border: none;
+    height: 4rem;
+   width: 20rem;
+    border-radius: 4rem;
+}
+p{
+    margin: 2.5rem 0;
+   font-size: 3vh;
+   line-height: 1.5;
+}
+@keyframes light {
+   33% {
+      text-shadow: 0 0 20px #1c2d91;
+   }
+   66% {
+      text-shadow: 0 0 20px #6de33c;
+   }
+}
+</style>
+</head>
+
+<body>
+    <div id="page-error">
+        
+       
+        <h1>400</h1>
+        <p >Bad Request <br />Select a point on the map and fill in all fields</p>
+        
+        <section class="back">
+            <button title="Visite orfanatos"><a  href="/create-orphanage" >Back for create orphanage</a></button>
+            {{!-- <a  href="/create-orphanage" >Back for create orphanage</a> --}}
+        </section>
+    </div>
+</body>
+
+</html>

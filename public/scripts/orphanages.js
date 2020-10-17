@@ -9,7 +9,7 @@ const icon = L.icon({
     iconUrl: "/images/map-marker.svg",
     iconSize: [58, 68],
     iconAnchor: [29, 68],
-    popupAnchor: [170, 2]
+    popupAnchor: [170, 2],
 })
 
 function addMarker({ id, name, lat, lng }) {
@@ -28,6 +28,7 @@ function addMarker({ id, name, lat, lng }) {
         .addTo(map)
         .bindPopup(popup)
 }
+
 
 const orphanagsSpan = document.querySelectorAll('.orphanages span')
 orphanagsSpan.forEach(span => {
