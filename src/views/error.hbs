@@ -40,8 +40,11 @@ button{
     background: #030b6d33;
     border: none;
     height: 4rem;
-   width: 20rem;
+   width: 4rem;
     border-radius: 4rem;
+    {{!-- display: flex; --}}
+    align-items:center;
+    justify-content: center;
 }
 p{
     margin: 2.5rem 0;
@@ -67,8 +70,7 @@ p{
         <p >Bad Request <br />Select a point on the map and fill in all fields</p>
         
         <section class="back">
-            <button title="Visite orfanatos"><a  href="/create-orphanage" >Back for create orphanage</a></button>
-            {{!-- <a  href="/create-orphanage" >Back for create orphanage</a> --}}
+             <button onclick="history.back()" title="Voltar para a página de cadastro"><img src="/images/arrow-back.svg" alt="Voltar"> </button>
         </section>
     </div>
 </body>

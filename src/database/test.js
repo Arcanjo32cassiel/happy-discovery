@@ -27,8 +27,12 @@ Database.then(async db => {
     // console.log(selectedOrphanages)
 
     // / CONSULTAR somente 1 orphanato, pelo id 
-    // const orphanage = await db.get('SELECT * FROM orphanages WHERE id = "1"')
+    // const orphanage = await db.get('SELECT * FROM orphanages WHERE id= "21"')
     // console.log(orphanage)
+    // console.log(await db.run('DELETE  FROM orphanages WHERE id= "20" '))
+    // console.log(await db.run('DELETE  FROM orphanages WHERE id= "19" '))
+    // console.log(await db.run('DELETE  FROM orphanages WHERE id= "17" '))
+    // console.log(await db.run('DELETE  FROM orphanages WHERE id= "18" '))
     // deletar dados da TABELA
     // console.log(await db.run("DELETE FROM orphanages "))
 
