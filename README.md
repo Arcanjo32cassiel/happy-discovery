@@ -38,6 +38,11 @@ Esse projeto foi desenvolvido utilizando as seguintes tecnologias:
 - [Express](https://expressjs.com/pt-br/)
 - [SQLite](https://www.sqlite.org/index.html)
 - [Nunjucks](https://mozilla.github.io/nunjucks/)
+-  Handlebars
+-  JavaScript
+-  CSS
+-  HTML
+
 
 ## 💻 Projeto
 
