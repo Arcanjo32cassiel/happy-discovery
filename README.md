@@ -27,7 +27,7 @@
 </p>
 
 <p align="center">
-  <img alt="Happy" src=".github/TEST100.webm" width="100%">
+  <img alt="Happy" src=".github/git.gif" width="100%">
 </p>
 
 ## 🚀 Tecnologias
@@ -38,10 +38,11 @@ Esse projeto foi desenvolvido utilizando as seguintes tecnologias:
 - [Express](https://expressjs.com/pt-br/)
 - [SQLite](https://www.sqlite.org/index.html)
 - [Nunjucks](https://mozilla.github.io/nunjucks/)
--  Handlebars
--  JavaScript
--  CSS
--  HTML
+- [Handlebars](https://handlebarsjs.com/guide/#what-is-handlebars)
+- [JavaScript](https://developer.mozilla.org/pt-BR/docs/Web/JavaScript)
+- [CSS](https://developer.mozilla.org/pt-BR/docs/Web/CSS)
+- [HTML](https://developer.mozilla.org/pt-BR/docs/Web/HTML)
+
 
 
 ## 💻 Projeto
